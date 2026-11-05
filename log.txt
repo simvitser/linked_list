@@ -1,0 +1,444 @@
+[list.c    ] [32  ] [listCtor                   ] [18:13:30] [ INFO] ->  start listCtor
+[list.c    ] [49  ] [listCtor                   ] [18:13:30] [   OK] ->  sucessfull init list
+[list.c    ] [232 ] [listDump                   ] [18:13:30] [ INFO] ->  --DUMP-LIST--
+[list.c    ] [234 ] [listDump                   ] [18:13:30] [ INFO] ->  mem {
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 0] - data: 0   prev:  0, next:  0;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 1] - data: 0   prev: -1, next:  2;
+[list.c    ] [238 ] [listDump                   ] [18:13:30] [ INFO] ->  }
+[list.c    ] [240 ] [listDump                   ] [18:13:30] [ INFO] ->  size: 0, capacity: 2
+[list.c    ] [241 ] [listDump                   ] [18:13:30] [ INFO] ->  free: 1, head: 0, tail: 0
+[list.c    ] [243 ] [listDump                   ] [18:13:30] [ INFO] ->  list: {
+[list.c    ] [251 ] [listDump                   ] [18:13:30] [ INFO] ->  }
+[list.c    ] [253 ] [listDump                   ] [18:13:30] [ INFO] ->  --END-DUMP--
+[list.c    ] [232 ] [listDump                   ] [18:13:30] [ INFO] ->  --DUMP-LIST--
+[list.c    ] [234 ] [listDump                   ] [18:13:30] [ INFO] ->  mem {
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 0] - data: 0   prev:  0, next:  0;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 1] - data: 0   prev: -1, next:  2;
+[list.c    ] [238 ] [listDump                   ] [18:13:30] [ INFO] ->  }
+[list.c    ] [240 ] [listDump                   ] [18:13:30] [ INFO] ->  size: 0, capacity: 2
+[list.c    ] [241 ] [listDump                   ] [18:13:30] [ INFO] ->  free: 1, head: 0, tail: 0
+[list.c    ] [243 ] [listDump                   ] [18:13:30] [ INFO] ->  list: {
+[list.c    ] [251 ] [listDump                   ] [18:13:30] [ INFO] ->  }
+[list.c    ] [253 ] [listDump                   ] [18:13:30] [ INFO] ->  --END-DUMP--
+[list.c    ] [56  ] [listPush                   ] [18:13:30] [ INFO] ->  try to push 10 
+[list.c    ] [232 ] [listDump                   ] [18:13:30] [ INFO] ->  --DUMP-LIST--
+[list.c    ] [234 ] [listDump                   ] [18:13:30] [ INFO] ->  mem {
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 0] - data: 0   prev:  1, next:  1;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 1] - data: 10  prev:  0, next:  0;
+[list.c    ] [238 ] [listDump                   ] [18:13:30] [ INFO] ->  }
+[list.c    ] [240 ] [listDump                   ] [18:13:30] [ INFO] ->  size: 1, capacity: 2
+[list.c    ] [241 ] [listDump                   ] [18:13:30] [ INFO] ->  free: 2, head: 1, tail: 1
+[list.c    ] [243 ] [listDump                   ] [18:13:30] [ INFO] ->  list: {
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 0] - 10     10 
+[list.c    ] [251 ] [listDump                   ] [18:13:30] [ INFO] ->  }
+[list.c    ] [253 ] [listDump                   ] [18:13:30] [ INFO] ->  --END-DUMP--
+[list.c    ] [56  ] [listPush                   ] [18:13:30] [ INFO] ->  try to push 20 
+[list.c    ] [195 ] [listResize                 ] [18:13:30] [ INFO] ->  try to resize list from sz: 2, to sz: 5
+[list.c    ] [212 ] [listResize                 ] [18:13:30] [   OK] ->  resized
+[list.c    ] [89  ] [listPush                   ] [18:13:30] [   OK] ->  pushed
+[list.c    ] [232 ] [listDump                   ] [18:13:30] [ INFO] ->  --DUMP-LIST--
+[list.c    ] [234 ] [listDump                   ] [18:13:30] [ INFO] ->  mem {
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 0] - data: 0   prev:  2, next:  1;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 1] - data: 10  prev:  0, next:  2;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 2] - data: 20  prev:  1, next:  0;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 3] - data: -1094795586 prev: -1, next:  4;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 4] - data: -1094795586 prev: -1, next:  5;
+[list.c    ] [238 ] [listDump                   ] [18:13:30] [ INFO] ->  }
+[list.c    ] [240 ] [listDump                   ] [18:13:30] [ INFO] ->  size: 2, capacity: 5
+[list.c    ] [241 ] [listDump                   ] [18:13:30] [ INFO] ->  free: 3, head: 1, tail: 2
+[list.c    ] [243 ] [listDump                   ] [18:13:30] [ INFO] ->  list: {
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 0] - 10     20 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 1] - 20     10 
+[list.c    ] [251 ] [listDump                   ] [18:13:30] [ INFO] ->  }
+[list.c    ] [253 ] [listDump                   ] [18:13:30] [ INFO] ->  --END-DUMP--
+[list.c    ] [56  ] [listPush                   ] [18:13:30] [ INFO] ->  try to push 30 
+[list.c    ] [89  ] [listPush                   ] [18:13:30] [   OK] ->  pushed
+[list.c    ] [232 ] [listDump                   ] [18:13:30] [ INFO] ->  --DUMP-LIST--
+[list.c    ] [234 ] [listDump                   ] [18:13:30] [ INFO] ->  mem {
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 0] - data: 0   prev:  3, next:  1;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 1] - data: 10  prev:  0, next:  2;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 2] - data: 20  prev:  1, next:  3;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 3] - data: 30  prev:  2, next:  0;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 4] - data: -1094795586 prev: -1, next:  5;
+[list.c    ] [238 ] [listDump                   ] [18:13:30] [ INFO] ->  }
+[list.c    ] [240 ] [listDump                   ] [18:13:30] [ INFO] ->  size: 3, capacity: 5
+[list.c    ] [241 ] [listDump                   ] [18:13:30] [ INFO] ->  free: 4, head: 1, tail: 3
+[list.c    ] [243 ] [listDump                   ] [18:13:30] [ INFO] ->  list: {
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 0] - 10     30 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 1] - 20     20 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 2] - 30     10 
+[list.c    ] [251 ] [listDump                   ] [18:13:30] [ INFO] ->  }
+[list.c    ] [253 ] [listDump                   ] [18:13:30] [ INFO] ->  --END-DUMP--
+[list.c    ] [56  ] [listPush                   ] [18:13:30] [ INFO] ->  try to push 40 
+[list.c    ] [89  ] [listPush                   ] [18:13:30] [   OK] ->  pushed
+[list.c    ] [232 ] [listDump                   ] [18:13:30] [ INFO] ->  --DUMP-LIST--
+[list.c    ] [234 ] [listDump                   ] [18:13:30] [ INFO] ->  mem {
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 0] - data: 0   prev:  4, next:  1;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 1] - data: 10  prev:  0, next:  2;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 2] - data: 20  prev:  1, next:  3;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 3] - data: 30  prev:  2, next:  4;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 4] - data: 40  prev:  3, next:  0;
+[list.c    ] [238 ] [listDump                   ] [18:13:30] [ INFO] ->  }
+[list.c    ] [240 ] [listDump                   ] [18:13:30] [ INFO] ->  size: 4, capacity: 5
+[list.c    ] [241 ] [listDump                   ] [18:13:30] [ INFO] ->  free: 5, head: 1, tail: 4
+[list.c    ] [243 ] [listDump                   ] [18:13:30] [ INFO] ->  list: {
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 0] - 10     40 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 1] - 20     30 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 2] - 30     20 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 3] - 40     10 
+[list.c    ] [251 ] [listDump                   ] [18:13:30] [ INFO] ->  }
+[list.c    ] [253 ] [listDump                   ] [18:13:30] [ INFO] ->  --END-DUMP--
+[list.c    ] [56  ] [listPush                   ] [18:13:30] [ INFO] ->  try to push 50 
+[list.c    ] [195 ] [listResize                 ] [18:13:30] [ INFO] ->  try to resize list from sz: 5, to sz: 11
+[list.c    ] [212 ] [listResize                 ] [18:13:30] [   OK] ->  resized
+[list.c    ] [89  ] [listPush                   ] [18:13:30] [   OK] ->  pushed
+[list.c    ] [232 ] [listDump                   ] [18:13:30] [ INFO] ->  --DUMP-LIST--
+[list.c    ] [234 ] [listDump                   ] [18:13:30] [ INFO] ->  mem {
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 0] - data: 0   prev:  5, next:  1;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 1] - data: 10  prev:  0, next:  2;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 2] - data: 20  prev:  1, next:  3;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 3] - data: 30  prev:  2, next:  4;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 4] - data: 40  prev:  3, next:  5;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 5] - data: 50  prev:  4, next:  0;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 6] - data: -1094795586 prev: -1, next:  7;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 7] - data: -1094795586 prev: -1, next:  8;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 8] - data: -1094795586 prev: -1, next:  9;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 9] - data: -1094795586 prev: -1, next: 10;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [10] - data: -1094795586 prev: -1, next: 11;
+[list.c    ] [238 ] [listDump                   ] [18:13:30] [ INFO] ->  }
+[list.c    ] [240 ] [listDump                   ] [18:13:30] [ INFO] ->  size: 5, capacity: 11
+[list.c    ] [241 ] [listDump                   ] [18:13:30] [ INFO] ->  free: 6, head: 1, tail: 5
+[list.c    ] [243 ] [listDump                   ] [18:13:30] [ INFO] ->  list: {
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 0] - 10     50 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 1] - 20     40 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 2] - 30     30 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 3] - 40     20 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 4] - 50     10 
+[list.c    ] [251 ] [listDump                   ] [18:13:30] [ INFO] ->  }
+[list.c    ] [253 ] [listDump                   ] [18:13:30] [ INFO] ->  --END-DUMP--
+[list.c    ] [232 ] [listDump                   ] [18:13:30] [ INFO] ->  --DUMP-LIST--
+[list.c    ] [234 ] [listDump                   ] [18:13:30] [ INFO] ->  mem {
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 0] - data: 0   prev:  5, next:  1;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 1] - data: 10  prev:  0, next:  2;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 2] - data: 20  prev:  1, next:  3;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 3] - data: 30  prev:  2, next:  4;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 4] - data: 40  prev:  3, next:  5;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 5] - data: 50  prev:  4, next:  0;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 6] - data: -1094795586 prev: -1, next:  7;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 7] - data: -1094795586 prev: -1, next:  8;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 8] - data: -1094795586 prev: -1, next:  9;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 9] - data: -1094795586 prev: -1, next: 10;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [10] - data: -1094795586 prev: -1, next: 11;
+[list.c    ] [238 ] [listDump                   ] [18:13:30] [ INFO] ->  }
+[list.c    ] [240 ] [listDump                   ] [18:13:30] [ INFO] ->  size: 5, capacity: 11
+[list.c    ] [241 ] [listDump                   ] [18:13:30] [ INFO] ->  free: 6, head: 1, tail: 5
+[list.c    ] [243 ] [listDump                   ] [18:13:30] [ INFO] ->  list: {
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 0] - 10     50 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 1] - 20     40 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 2] - 30     30 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 3] - 40     20 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 4] - 50     10 
+[list.c    ] [251 ] [listDump                   ] [18:13:30] [ INFO] ->  }
+[list.c    ] [253 ] [listDump                   ] [18:13:30] [ INFO] ->  --END-DUMP--
+[list.c    ] [97  ] [listInsert                 ] [18:13:30] [ INFO] ->  try to insert 6767 to index 0
+[list.c    ] [232 ] [listDump                   ] [18:13:30] [ INFO] ->  --DUMP-LIST--
+[list.c    ] [234 ] [listDump                   ] [18:13:30] [ INFO] ->  mem {
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 0] - data: 0   prev:  5, next:  6;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 1] - data: 10  prev:  6, next:  2;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 2] - data: 20  prev:  1, next:  3;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 3] - data: 30  prev:  2, next:  4;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 4] - data: 40  prev:  3, next:  5;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 5] - data: 50  prev:  4, next:  0;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 6] - data: 6767 prev:  0, next:  1;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 7] - data: -1094795586 prev: -1, next:  8;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 8] - data: -1094795586 prev: -1, next:  9;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 9] - data: -1094795586 prev: -1, next: 10;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [10] - data: -1094795586 prev: -1, next: 11;
+[list.c    ] [238 ] [listDump                   ] [18:13:30] [ INFO] ->  }
+[list.c    ] [240 ] [listDump                   ] [18:13:30] [ INFO] ->  size: 6, capacity: 11
+[list.c    ] [241 ] [listDump                   ] [18:13:30] [ INFO] ->  free: 7, head: 6, tail: 5
+[list.c    ] [243 ] [listDump                   ] [18:13:30] [ INFO] ->  list: {
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 0] - 6767    50 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 1] - 10     40 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 2] - 20     30 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 3] - 30     20 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 4] - 40     10 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 5] - 50     6767
+[list.c    ] [251 ] [listDump                   ] [18:13:30] [ INFO] ->  }
+[list.c    ] [253 ] [listDump                   ] [18:13:30] [ INFO] ->  --END-DUMP--
+[list.c    ] [97  ] [listInsert                 ] [18:13:30] [ INFO] ->  try to insert 77  to index 2
+[list.c    ] [232 ] [listDump                   ] [18:13:30] [ INFO] ->  --DUMP-LIST--
+[list.c    ] [234 ] [listDump                   ] [18:13:30] [ INFO] ->  mem {
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 0] - data: 0   prev:  5, next:  6;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 1] - data: 10  prev:  6, next:  7;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 2] - data: 20  prev:  7, next:  3;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 3] - data: 30  prev:  2, next:  4;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 4] - data: 40  prev:  3, next:  5;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 5] - data: 50  prev:  4, next:  0;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 6] - data: 6767 prev:  0, next:  1;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 7] - data: 77  prev:  1, next:  2;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 8] - data: -1094795586 prev: -1, next:  9;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 9] - data: -1094795586 prev: -1, next: 10;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [10] - data: -1094795586 prev: -1, next: 11;
+[list.c    ] [238 ] [listDump                   ] [18:13:30] [ INFO] ->  }
+[list.c    ] [240 ] [listDump                   ] [18:13:30] [ INFO] ->  size: 7, capacity: 11
+[list.c    ] [241 ] [listDump                   ] [18:13:30] [ INFO] ->  free: 8, head: 6, tail: 5
+[list.c    ] [243 ] [listDump                   ] [18:13:30] [ INFO] ->  list: {
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 0] - 6767    50 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 1] - 10     40 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 2] - 77     30 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 3] - 20     20 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 4] - 30     77 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 5] - 40     10 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 6] - 50     6767
+[list.c    ] [251 ] [listDump                   ] [18:13:30] [ INFO] ->  }
+[list.c    ] [253 ] [listDump                   ] [18:13:30] [ INFO] ->  --END-DUMP--
+[list.c    ] [97  ] [listInsert                 ] [18:13:30] [ INFO] ->  try to insert 67  to index 4
+[list.c    ] [232 ] [listDump                   ] [18:13:30] [ INFO] ->  --DUMP-LIST--
+[list.c    ] [234 ] [listDump                   ] [18:13:30] [ INFO] ->  mem {
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 0] - data: 0   prev:  5, next:  6;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 1] - data: 10  prev:  6, next:  7;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 2] - data: 20  prev:  7, next:  8;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 3] - data: 30  prev:  8, next:  4;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 4] - data: 40  prev:  3, next:  5;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 5] - data: 50  prev:  4, next:  0;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 6] - data: 6767 prev:  0, next:  1;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 7] - data: 77  prev:  1, next:  2;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 8] - data: 67  prev:  2, next:  3;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 9] - data: -1094795586 prev: -1, next: 10;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [10] - data: -1094795586 prev: -1, next: 11;
+[list.c    ] [238 ] [listDump                   ] [18:13:30] [ INFO] ->  }
+[list.c    ] [240 ] [listDump                   ] [18:13:30] [ INFO] ->  size: 8, capacity: 11
+[list.c    ] [241 ] [listDump                   ] [18:13:30] [ INFO] ->  free: 9, head: 6, tail: 5
+[list.c    ] [243 ] [listDump                   ] [18:13:30] [ INFO] ->  list: {
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 0] - 6767    50 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 1] - 10     40 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 2] - 77     30 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 3] - 20     67 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 4] - 67     20 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 5] - 30     77 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 6] - 40     10 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 7] - 50     6767
+[list.c    ] [251 ] [listDump                   ] [18:13:30] [ INFO] ->  }
+[list.c    ] [253 ] [listDump                   ] [18:13:30] [ INFO] ->  --END-DUMP--
+[list.c    ] [232 ] [listDump                   ] [18:13:30] [ INFO] ->  --DUMP-LIST--
+[list.c    ] [234 ] [listDump                   ] [18:13:30] [ INFO] ->  mem {
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 0] - data: 0   prev:  5, next:  6;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 1] - data: 10  prev:  6, next:  7;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 2] - data: 20  prev:  7, next:  8;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 3] - data: 30  prev:  8, next:  4;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 4] - data: 40  prev:  3, next:  5;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 5] - data: 50  prev:  4, next:  0;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 6] - data: 6767 prev:  0, next:  1;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 7] - data: 77  prev:  1, next:  2;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 8] - data: 67  prev:  2, next:  3;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 9] - data: -1094795586 prev: -1, next: 10;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [10] - data: -1094795586 prev: -1, next: 11;
+[list.c    ] [238 ] [listDump                   ] [18:13:30] [ INFO] ->  }
+[list.c    ] [240 ] [listDump                   ] [18:13:30] [ INFO] ->  size: 8, capacity: 11
+[list.c    ] [241 ] [listDump                   ] [18:13:30] [ INFO] ->  free: 9, head: 6, tail: 5
+[list.c    ] [243 ] [listDump                   ] [18:13:30] [ INFO] ->  list: {
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 0] - 6767    50 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 1] - 10     40 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 2] - 77     30 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 3] - 20     67 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 4] - 67     20 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 5] - 30     77 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 6] - 40     10 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 7] - 50     6767
+[list.c    ] [251 ] [listDump                   ] [18:13:30] [ INFO] ->  }
+[list.c    ] [253 ] [listDump                   ] [18:13:30] [ INFO] ->  --END-DUMP--
+[list.c    ] [149 ] [listPop                    ] [18:13:30] [ INFO] ->  try to pop index 1
+[list.c    ] [157 ] [listPop                    ] [18:13:30] [ INFO] ->  index: 1, real_index: 1
+[list.c    ] [171 ] [listPop                    ] [18:13:30] [   OK] ->  poped
+[list.c    ] [232 ] [listDump                   ] [18:13:30] [ INFO] ->  --DUMP-LIST--
+[list.c    ] [234 ] [listDump                   ] [18:13:30] [ INFO] ->  mem {
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 0] - data: 0   prev:  5, next:  6;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 1] - data: 0   prev: -1, next:  9;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 2] - data: 20  prev:  7, next:  8;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 3] - data: 30  prev:  8, next:  4;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 4] - data: 40  prev:  3, next:  5;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 5] - data: 50  prev:  4, next:  0;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 6] - data: 6767 prev:  0, next:  7;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 7] - data: 77  prev:  6, next:  2;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 8] - data: 67  prev:  2, next:  3;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 9] - data: -1094795586 prev: -1, next: 10;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [10] - data: -1094795586 prev: -1, next: 11;
+[list.c    ] [238 ] [listDump                   ] [18:13:30] [ INFO] ->  }
+[list.c    ] [240 ] [listDump                   ] [18:13:30] [ INFO] ->  size: 7, capacity: 11
+[list.c    ] [241 ] [listDump                   ] [18:13:30] [ INFO] ->  free: 1, head: 6, tail: 5
+[list.c    ] [243 ] [listDump                   ] [18:13:30] [ INFO] ->  list: {
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 0] - 6767    50 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 1] - 77     40 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 2] - 20     30 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 3] - 67     67 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 4] - 30     20 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 5] - 40     77 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 6] - 50     6767
+[list.c    ] [251 ] [listDump                   ] [18:13:30] [ INFO] ->  }
+[list.c    ] [253 ] [listDump                   ] [18:13:30] [ INFO] ->  --END-DUMP--
+[list.c    ] [232 ] [listDump                   ] [18:13:30] [ INFO] ->  --DUMP-LIST--
+[list.c    ] [234 ] [listDump                   ] [18:13:30] [ INFO] ->  mem {
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 0] - data: 0   prev:  5, next:  6;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 1] - data: 0   prev: -1, next:  9;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 2] - data: 20  prev:  7, next:  8;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 3] - data: 30  prev:  8, next:  4;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 4] - data: 40  prev:  3, next:  5;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 5] - data: 50  prev:  4, next:  0;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 6] - data: 6767 prev:  0, next:  7;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 7] - data: 77  prev:  6, next:  2;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 8] - data: 67  prev:  2, next:  3;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 9] - data: -1094795586 prev: -1, next: 10;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [10] - data: -1094795586 prev: -1, next: 11;
+[list.c    ] [238 ] [listDump                   ] [18:13:30] [ INFO] ->  }
+[list.c    ] [240 ] [listDump                   ] [18:13:30] [ INFO] ->  size: 7, capacity: 11
+[list.c    ] [241 ] [listDump                   ] [18:13:30] [ INFO] ->  free: 1, head: 6, tail: 5
+[list.c    ] [243 ] [listDump                   ] [18:13:30] [ INFO] ->  list: {
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 0] - 6767    50 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 1] - 77     40 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 2] - 20     30 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 3] - 67     67 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 4] - 30     20 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 5] - 40     77 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 6] - 50     6767
+[list.c    ] [251 ] [listDump                   ] [18:13:30] [ INFO] ->  }
+[list.c    ] [253 ] [listDump                   ] [18:13:30] [ INFO] ->  --END-DUMP--
+[list.c    ] [56  ] [listPush                   ] [18:13:30] [ INFO] ->  try to push 87 
+[list.c    ] [89  ] [listPush                   ] [18:13:30] [   OK] ->  pushed
+[list.c    ] [232 ] [listDump                   ] [18:13:30] [ INFO] ->  --DUMP-LIST--
+[list.c    ] [234 ] [listDump                   ] [18:13:30] [ INFO] ->  mem {
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 0] - data: 0   prev:  1, next:  6;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 1] - data: 87  prev:  5, next:  0;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 2] - data: 20  prev:  7, next:  8;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 3] - data: 30  prev:  8, next:  4;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 4] - data: 40  prev:  3, next:  5;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 5] - data: 50  prev:  4, next:  1;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 6] - data: 6767 prev:  0, next:  7;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 7] - data: 77  prev:  6, next:  2;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 8] - data: 67  prev:  2, next:  3;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 9] - data: -1094795586 prev: -1, next: 10;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [10] - data: -1094795586 prev: -1, next: 11;
+[list.c    ] [238 ] [listDump                   ] [18:13:30] [ INFO] ->  }
+[list.c    ] [240 ] [listDump                   ] [18:13:30] [ INFO] ->  size: 8, capacity: 11
+[list.c    ] [241 ] [listDump                   ] [18:13:30] [ INFO] ->  free: 9, head: 6, tail: 1
+[list.c    ] [243 ] [listDump                   ] [18:13:30] [ INFO] ->  list: {
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 0] - 6767    87 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 1] - 77     50 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 2] - 20     40 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 3] - 67     30 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 4] - 30     67 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 5] - 40     20 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 6] - 50     77 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 7] - 87     6767
+[list.c    ] [251 ] [listDump                   ] [18:13:30] [ INFO] ->  }
+[list.c    ] [253 ] [listDump                   ] [18:13:30] [ INFO] ->  --END-DUMP--
+[list.c    ] [232 ] [listDump                   ] [18:13:30] [ INFO] ->  --DUMP-LIST--
+[list.c    ] [234 ] [listDump                   ] [18:13:30] [ INFO] ->  mem {
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 0] - data: 0   prev:  1, next:  6;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 1] - data: 87  prev:  5, next:  0;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 2] - data: 20  prev:  7, next:  8;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 3] - data: 30  prev:  8, next:  4;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 4] - data: 40  prev:  3, next:  5;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 5] - data: 50  prev:  4, next:  1;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 6] - data: 6767 prev:  0, next:  7;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 7] - data: 77  prev:  6, next:  2;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 8] - data: 67  prev:  2, next:  3;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 9] - data: -1094795586 prev: -1, next: 10;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [10] - data: -1094795586 prev: -1, next: 11;
+[list.c    ] [238 ] [listDump                   ] [18:13:30] [ INFO] ->  }
+[list.c    ] [240 ] [listDump                   ] [18:13:30] [ INFO] ->  size: 8, capacity: 11
+[list.c    ] [241 ] [listDump                   ] [18:13:30] [ INFO] ->  free: 9, head: 6, tail: 1
+[list.c    ] [243 ] [listDump                   ] [18:13:30] [ INFO] ->  list: {
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 0] - 6767    87 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 1] - 77     50 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 2] - 20     40 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 3] - 67     30 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 4] - 30     67 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 5] - 40     20 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 6] - 50     77 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 7] - 87     6767
+[list.c    ] [251 ] [listDump                   ] [18:13:30] [ INFO] ->  }
+[list.c    ] [253 ] [listDump                   ] [18:13:30] [ INFO] ->  --END-DUMP--
+[list.c    ] [149 ] [listPop                    ] [18:13:30] [ INFO] ->  try to pop index 0
+[list.c    ] [157 ] [listPop                    ] [18:13:30] [ INFO] ->  index: 0, real_index: 6
+[list.c    ] [171 ] [listPop                    ] [18:13:30] [   OK] ->  poped
+[list.c    ] [232 ] [listDump                   ] [18:13:30] [ INFO] ->  --DUMP-LIST--
+[list.c    ] [234 ] [listDump                   ] [18:13:30] [ INFO] ->  mem {
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 0] - data: 0   prev:  1, next:  7;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 1] - data: 87  prev:  5, next:  0;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 2] - data: 20  prev:  7, next:  8;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 3] - data: 30  prev:  8, next:  4;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 4] - data: 40  prev:  3, next:  5;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 5] - data: 50  prev:  4, next:  1;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 6] - data: 0   prev: -1, next:  9;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 7] - data: 77  prev:  0, next:  2;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 8] - data: 67  prev:  2, next:  3;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 9] - data: -1094795586 prev: -1, next: 10;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [10] - data: -1094795586 prev: -1, next: 11;
+[list.c    ] [238 ] [listDump                   ] [18:13:30] [ INFO] ->  }
+[list.c    ] [240 ] [listDump                   ] [18:13:30] [ INFO] ->  size: 7, capacity: 11
+[list.c    ] [241 ] [listDump                   ] [18:13:30] [ INFO] ->  free: 6, head: 7, tail: 1
+[list.c    ] [243 ] [listDump                   ] [18:13:30] [ INFO] ->  list: {
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 0] - 77     87 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 1] - 20     50 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 2] - 67     40 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 3] - 30     30 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 4] - 40     67 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 5] - 50     20 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 6] - 87     77 
+[list.c    ] [251 ] [listDump                   ] [18:13:30] [ INFO] ->  }
+[list.c    ] [253 ] [listDump                   ] [18:13:30] [ INFO] ->  --END-DUMP--
+[list.c    ] [232 ] [listDump                   ] [18:13:30] [ INFO] ->  --DUMP-LIST--
+[list.c    ] [234 ] [listDump                   ] [18:13:30] [ INFO] ->  mem {
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 0] - data: 0   prev:  1, next:  7;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 1] - data: 87  prev:  5, next:  0;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 2] - data: 20  prev:  7, next:  8;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 3] - data: 30  prev:  8, next:  4;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 4] - data: 40  prev:  3, next:  5;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 5] - data: 50  prev:  4, next:  1;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 6] - data: 0   prev: -1, next:  9;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 7] - data: 77  prev:  0, next:  2;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 8] - data: 67  prev:  2, next:  3;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 9] - data: -1094795586 prev: -1, next: 10;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [10] - data: -1094795586 prev: -1, next: 11;
+[list.c    ] [238 ] [listDump                   ] [18:13:30] [ INFO] ->  }
+[list.c    ] [240 ] [listDump                   ] [18:13:30] [ INFO] ->  size: 7, capacity: 11
+[list.c    ] [241 ] [listDump                   ] [18:13:30] [ INFO] ->  free: 6, head: 7, tail: 1
+[list.c    ] [243 ] [listDump                   ] [18:13:30] [ INFO] ->  list: {
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 0] - 77     87 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 1] - 20     50 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 2] - 67     40 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 3] - 30     30 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 4] - 40     67 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 5] - 50     20 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 6] - 87     77 
+[list.c    ] [251 ] [listDump                   ] [18:13:30] [ INFO] ->  }
+[list.c    ] [253 ] [listDump                   ] [18:13:30] [ INFO] ->  --END-DUMP--
+[list.c    ] [149 ] [listPop                    ] [18:13:30] [ INFO] ->  try to pop index 3
+[list.c    ] [157 ] [listPop                    ] [18:13:30] [ INFO] ->  index: 3, real_index: 3
+[list.c    ] [171 ] [listPop                    ] [18:13:30] [   OK] ->  poped
+[list.c    ] [232 ] [listDump                   ] [18:13:30] [ INFO] ->  --DUMP-LIST--
+[list.c    ] [234 ] [listDump                   ] [18:13:30] [ INFO] ->  mem {
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 0] - data: 0   prev:  1, next:  7;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 1] - data: 87  prev:  5, next:  0;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 2] - data: 20  prev:  7, next:  8;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 3] - data: 0   prev: -1, next:  6;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 4] - data: 40  prev:  8, next:  5;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 5] - data: 50  prev:  4, next:  1;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 6] - data: 0   prev: -1, next:  9;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 7] - data: 77  prev:  0, next:  2;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 8] - data: 67  prev:  2, next:  4;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 9] - data: -1094795586 prev: -1, next: 10;
+[list.c    ] [236 ] [listDump                   ] [18:13:30] [ INFO] ->      [10] - data: -1094795586 prev: -1, next: 11;
+[list.c    ] [238 ] [listDump                   ] [18:13:30] [ INFO] ->  }
+[list.c    ] [240 ] [listDump                   ] [18:13:30] [ INFO] ->  size: 6, capacity: 11
+[list.c    ] [241 ] [listDump                   ] [18:13:30] [ INFO] ->  free: 3, head: 7, tail: 1
+[list.c    ] [243 ] [listDump                   ] [18:13:30] [ INFO] ->  list: {
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 0] - 77     87 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 1] - 20     50 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 2] - 67     40 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 3] - 40     67 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 4] - 50     20 
+[list.c    ] [247 ] [listDump                   ] [18:13:30] [ INFO] ->      [ 5] - 87     77 
+[list.c    ] [251 ] [listDump                   ] [18:13:30] [ INFO] ->  }
+[list.c    ] [253 ] [listDump                   ] [18:13:30] [ INFO] ->  --END-DUMP--
